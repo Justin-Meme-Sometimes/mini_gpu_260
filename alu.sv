@@ -12,8 +12,10 @@ always_comb begin
         4'd3: intermediate_calc = in_a | in_b;
         4'd4: intermediate_calc = in_a & in_b;
         4'd5: intermediate_calc = in_a ^ in_b;
-        4'd6: intermediate_calc = in_a
-        4'd7: intermediate_calc = in_b
+        4'd6: intermediate_calc = in_a;
+        4'd7: intermediate_calc = in_b;
+        4'd8: intermediate_calc = in_a >> in_b[4:0];
+        4'd9: intermediate_calc = in_a < in_b
     endcase
 end
 
